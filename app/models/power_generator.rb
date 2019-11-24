@@ -14,4 +14,10 @@ class PowerGenerator < ApplicationRecord
     trapezoidal
   ]
 
+  def self.search(search)
+    if search
+      where("name LIKE :param or description LIKE :param", {param: "%#{search}%"})
+    end
+
+  end
 end

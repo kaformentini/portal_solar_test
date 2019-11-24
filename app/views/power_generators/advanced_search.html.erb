@@ -1,8 +1,10 @@
-
-<div>
-  <%= link_to 'Recomendados para você', recommendations_path %> 
+<div align="center">
+  <h3><%= flash[:error] %></h3>
+  <h3><%= flash[:notice] %></h3>
 </div>
-<div class="container" >
+
+<div> 
+  <div class="container" >
   <% @power_generators.each do |power_generator| %>
     <div class="box card power_generator-card">
       <%= image_tag power_generator.image_url, class: 'power_generator-card__img' %>
@@ -14,4 +16,3 @@
     </div>
   <% end %>
 </div>
-

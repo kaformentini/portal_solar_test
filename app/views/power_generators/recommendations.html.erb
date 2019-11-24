@@ -1,3 +1,29 @@
-Responda o uestinário para que possamos recomendar o melhor produto para você
+Nós queremos saber mais sobre o que você procura. Responda as perguntas abaixo:
 
-Quanto ao preço:
+<%= form_tag(advanced_search_power_generators_path, method: :get) do %>
+  <%= check_box_tag(:cheper_generator) %>
+  <%= label_tag(:cheper_generator, "Menor Custo") %>
+  <%= check_box_tag(:cost_benefit_generator) %>
+  <%= label_tag(:cost_benefit_generator, "Maior Custo-Benefício") %>
+  <%= check_box_tag(:lower_weight_generator) %>
+  <%= label_tag(:lower_weight_generator, "Menor Peso") %>
+  <%= check_box_tag(:smaller_ize_generator) %>
+  <%= label_tag(:smaller_size_generator, "Menor Tamanho") %>
+  <%= submit_tag('Buscar') %>
+<% end %>
+  
+  
+<div class="advanced-form" style="display:none;">
+
+    <div>
+      <div class="simple-form__input">
+        <input class="form-control form-control-lg" type="text" placeholder="o que procura?" name='search_power_generator'>
+      </div>
+      <div class="simple-form__btn">
+        <button type="submit" class="btn btn-outline-primary btn-lg">Pesquisar</button>
+      </div>
+    </div>
+
+
+
+</div>

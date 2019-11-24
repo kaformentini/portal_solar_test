@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <%= form_tag do %>
+    <%= form_tag(search_power_generators_path, method: :get) do %>
       <div class="simple-form">
         <div class="simple-form__input">
           <input class="form-control form-control-lg" type="text" placeholder="o que procura?">

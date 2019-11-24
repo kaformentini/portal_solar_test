@@ -1,0 +1,10 @@
+Nós queremos saber mais sobre o que você procura. Responda as perguntas abaixo:
+
+<%= form_for @recommended_search do |f| %>
+  <%= f.check_box(:lowest_cost) %>
+  <%= f.label(:lowest_cost, "Menor Custo") %>
+  <%= f.submit('Buscar') %>
+<% end %>
+
+  
+  

@@ -1,0 +1,2 @@
+module RecommendedSearchesHelper
+end

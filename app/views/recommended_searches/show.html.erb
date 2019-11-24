@@ -1,0 +1,10 @@
+<%if @recommended_search.search_power_generators.empty? %>
+  Que pena :( não conseguimos encontrar nenhum produto para você
+<% else %>
+  Nós indicamos para você:
+  <% @recommended_search.search_power_generators.each do |product| %>
+    <%= product.name %>
+    <%= product.price %>
+    <br>
+  <% end %>
+<% end %>

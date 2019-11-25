@@ -20,6 +20,10 @@ class PowerGeneratorsController < ApplicationController
       flash.now[:notice] = 'Encontramos esse(s) produto(s)'
 
     end
+    
   end
- 
+
+  def freight
+    
+  end
 end

@@ -11,6 +11,7 @@ https://mighty-harbor-04580.herokuapp.com/
 
 - RSpec
 - Factory_bot_rails
+- correios-cep v.0.7.1
 
 #### O que foi feito
   - Busca simpes, que busca nos atributos name e description

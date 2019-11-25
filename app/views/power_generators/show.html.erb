@@ -1,0 +1,22 @@
+<h1><%= @power_generator.name %></h1>
+
+<h3>Detalhes</h3>
+
+<p>Tipo de estrutura:</p>
+<p><%= @power_generator.structure_type %></p>
+<p>Descrićão</p>
+<p><%= @power_generator.description %></p>
+<p>Fabricante</p>
+<p><%= @power_generator.manufacturer %></p>
+<p>Dimenćoes</p>
+<p><%="#{@power_generator.height} x #{@power_generator.width} x #{@power_generator.lenght}" %></p>
+<p>Produćão de energia(kWp)</p>
+<p><%= @power_generator.kwp %></p>
+
+<h3>Prećo</h3>
+<h2><%= @power_generator.price %></h2>
+
+<p>Imagens</p>
+<%= image_tag @power_generator.image_url %>
+
+<%= link_to 'Voltar', root_path %>

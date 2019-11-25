@@ -5,6 +5,7 @@
 ### Deploy
 
 https://mysterious-cliffs-69913.herokuapp.com
+https://mighty-harbor-04580.herokuapp.com/
 
 #### Gems adicionadas
 
@@ -17,6 +18,8 @@ https://mysterious-cliffs-69913.herokuapp.com
     Caso seja filtrado por um único parametro, será exibido todos os produtos, ordenado pelo respectivo atributo, ou em casos como da "Palavra Chave" ou do "Tipo de Estrutura" por preco.
     A escolha dos produtos se dá por um intervalo pré-estabelecido quando se trata de valores, que poderia ser calculados ao em vez de pré-estabelecidos.
     Existem ainda mais campos que poderiam ser adicionados como preco mínimo e máximo.
+
+    Minha intencão era não simpismente promover um filtro nos produtos, mas poder indicar qual seria a melhor opcão para o cliente, filtrando e ordenando os produtos.
 
 
 ##### Mudanças

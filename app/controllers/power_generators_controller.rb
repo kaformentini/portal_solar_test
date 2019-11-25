@@ -3,6 +3,10 @@ class PowerGeneratorsController < ApplicationController
     @power_generators = PowerGenerator.all
   end
 
+  def show
+      @power_generator = PowerGenerator.find(params[:id])
+  end
+
   def recommendations
     
   end
@@ -17,13 +21,5 @@ class PowerGeneratorsController < ApplicationController
 
     end
   end
-
-  private
-  # def power_enerator_params
-  #   params.require(:power_generators).permit(:name, :description, :image_url, :manufacturer, :structure_type, 
-  #                                           :price, :height, :width, :lenght, :weight, :kwp)
-  # end
-
+ 
 end
-
-# Entradas do usuário para pesquisar uma coleção de geradores de energia com base nas recomendações fornecidas e melhor custo de frete.

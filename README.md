@@ -11,9 +11,18 @@ https://mysterious-cliffs-69913.herokuapp.com
 - RSpec
 - Factory_bot_rails
 
+#### O que foi feito
+  - Busca simpes, que busca nos atributos name e description
+  - Busca por recomendacão, podendo ser filtrado por um ou mais atributos, e ordenado por uma     ordem pré definida, sendo a principal por preco. 
+    Caso seja filtrado por um único parametro, será exibido todos os produtos, ordenado pelo respectivo atributo, ou em casos como da "Palavra Chave" ou do "Tipo de Estrutura" por preco.
+    A escolha dos produtos se dá por um intervalo pré-estabelecido quando se trata de valores, que poderia ser calculados ao em vez de pré-estabelecidos.
+    Existem ainda mais campos que poderiam ser adicionados como preco mínimo e máximo.
 
-#### Mudanças
+
+##### Mudanças
   - "header" mudado para application.htlm.erb
+  - Adicionado novos atributos no objeto PowerGenerators
+
 
 #### Coisas que não consegui fazer
   - Na busca simples, só fazer a busca digitando o nome do produto se ele estiver em uppercase/

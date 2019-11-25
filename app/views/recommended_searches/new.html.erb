@@ -3,6 +3,14 @@ Nós queremos saber mais sobre o que você procura. Responda as perguntas abaixo
 <%= form_for @recommended_search do |f| %>
   <%= f.check_box(:lowest_cost) %>
   <%= f.label(:lowest_cost, "Menor Custo") %>
+  <%= f.check_box(:lower_weight) %>
+  <%= f.label(:lower_weight, "Menor Peso") %>
+  <%= f.check_box(:lower_size) %>
+  <%= f.label(:lower_size, "Menor Tamanho") %>
+  <%= f.text_field(:keyword) %>
+  <%= f.label(:keyword, "Palavra Chave") %>
+  <%= f.label :structure_type, "Tipo de Estrutura" %>
+  <%= f.select(:structure_type, PowerGenerator.structure_types, { include_blank: true }) %>  
   <%= f.submit('Buscar') %>
 <% end %>
 

@@ -14,7 +14,9 @@ PowerGenerator.create!(
   width: 0.2,
   lenght: 1.8,
   weight: 118,
-  structure_type: :metalico
+  structure_type: :metalico,
+  size: 0.432,
+  cost_benefit: 3.47
 )
 
 PowerGenerator.create!(
@@ -31,7 +33,9 @@ PowerGenerator.create!(
   width: 0.3,
   lenght: 1.1,
   weight: 172,
-  structure_type: :fibrocimento
+  structure_type: :fibrocimento,
+  size: 0.396,
+  cost_benefit: 2.13
 )
 
 PowerGenerator.create!(
@@ -48,7 +52,9 @@ PowerGenerator.create!(
   width: 0.2,
   lenght: 2.1,
   weight: 142,
-  structure_type: :ceramico
+  structure_type: :ceramico,
+  size: 0.504,
+  cost_benefit: 2.29
 )
 
 PowerGenerator.create!(
@@ -65,7 +71,9 @@ PowerGenerator.create!(
   width: 0.35,
   lenght: 2,
   weight: 110,
-  structure_type: :metalico
+  structure_type: :metalico,
+  size: 0.7,
+  cost_benefit: 2.19
 )
 
 PowerGenerator.create!(
@@ -86,7 +94,9 @@ PowerGenerator.create!(
   width: 0.35,
   lenght: 1.9,
   weight: 150,
-  structure_type: :trapezoidal
+  structure_type: :trapezoidal,
+  size: 0.4,
+  cost_benefit: 2.06
 )
 
 PowerGenerator.create!(
@@ -104,7 +114,9 @@ PowerGenerator.create!(
   width: 0.4,
   lenght: 1.5,
   weight: 268,
-  structure_type: :fibrocimento
+  structure_type: :fibrocimento,
+  size: 0.42,
+  cost_benefit: 2.43
 )
 
 PowerGenerator.create!(
@@ -126,7 +138,9 @@ PowerGenerator.create!(
   width: 0.2,
   lenght: 2.2,
   weight: 155,
-  structure_type: :metalico
+  structure_type: :metalico,
+  size: 0.748,
+  cost_benefit: 3.49
 )
 
 PowerGenerator.create!(
@@ -143,7 +157,9 @@ PowerGenerator.create!(
   width: 0.15,
   lenght: 1.8,
   weight: 218,
-  structure_type: :metalico
+  structure_type: :metalico,
+  size: 0.54,
+  cost_benefit: 4.36
 )
 
 PowerGenerator.create!(
@@ -164,7 +180,9 @@ PowerGenerator.create!(
   width: 0.5,
   lenght: 1.1,
   weight: 98,
-  structure_type: :trapezoidal
+  structure_type: :trapezoidal,
+  size: 0.55,
+  cost_benefit: 2.72
 )
 
 PowerGenerator.create!(
@@ -185,7 +203,9 @@ PowerGenerator.create!(
   width: 0.55,
   lenght: 1.1,
   weight: 172,
-  structure_type: :trapezoidal
+  structure_type: :trapezoidal,
+  size: 0.91,
+  cost_benefit: 2.62
 )
 
 PowerGenerator.create!(
@@ -202,7 +222,9 @@ PowerGenerator.create!(
   width: 0.3,
   lenght: 1,
   weight: 110,
-  structure_type: :laje
+  structure_type: :laje,
+  size: 0.3,
+  cost_benefit: 2
 )
 
 PowerGenerator.create!(
@@ -219,7 +241,9 @@ PowerGenerator.create!(
   width: 0.45,
   lenght: 1.2,
   weight: 250,
-  structure_type: :laje
+  structure_type: :laje,
+  size: 0.3,
+  cost_benefit: 2
 )
 
 PowerGenerator.create!(
@@ -236,7 +260,9 @@ PowerGenerator.create!(
   width: 0.2,
   lenght: 2.3,
   weight: 87,
-  structure_type: :solo
+  structure_type: :solo,
+  size: 0.3,
+  cost_benefit: 2
 )
 
 PowerGenerator.create!(
@@ -253,7 +279,9 @@ PowerGenerator.create!(
   width: 0.35,
   lenght: 1.2,
   weight: 140,
-  structure_type: :solo
+  structure_type: :solo,
+  size: 0.3,
+  cost_benefit: 2
 )
 
 PowerGenerator.create!(
@@ -270,7 +298,9 @@ PowerGenerator.create!(
   width: 0.25,
   lenght: 1.5,
   weight: 122,
-  structure_type: :solo
+  structure_type: :solo,
+  size: 0.3,
+  cost_benefit: 2
 )
 
 PowerGenerator.create!(
@@ -295,7 +325,9 @@ PowerGenerator.create!(
   width: 0.15,
   lenght: 1.8,
   weight: 114,
-  structure_type: :solo
+  structure_type: :solo,
+  size: 0.3,
+  cost_benefit: 2
 )
 
 PowerGenerator.create!(
@@ -312,7 +344,9 @@ PowerGenerator.create!(
   width: 0.25,
   lenght: 2.2,
   weight: 118,
-  structure_type: :trapezoidal
+  structure_type: :trapezoidal,
+  size: 0.3,
+  cost_benefit: 2
 )
 
 PowerGenerator.create!(
@@ -329,7 +363,9 @@ PowerGenerator.create!(
   width: 0.3,
   lenght: 1.8,
   weight: 99,
-  structure_type: :laje
+  structure_type: :laje,
+  size: 0.3,
+  cost_benefit: 2
 )
 
 # Import to XLS with Freights

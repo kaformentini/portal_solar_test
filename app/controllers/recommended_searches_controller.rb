@@ -17,8 +17,9 @@ class RecommendedSearchesController < ApplicationController
   
   private
   def recommended_search_params
-    params.require(:recommended_search).permit(:lowest_cost, :highest_cost_benefit,
-                                               :lower_weight, :lower_size)
+    params.require(:recommended_search).permit(:lowest_cost, :cost_benefit,
+                                               :lower_weight, :lower_size, :keyword, 
+                                               :structure_type)
   end
 
 end

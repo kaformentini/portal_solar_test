@@ -3,8 +3,12 @@
 <% else %>
   Nós indicamos para você:
   <% @recommended_search.search_power_generators.each do |product| %>
-    <%= product.name %>
-    <%= product.price %>
+    <br>
+    <%= product.name %> ----------
+    <%= product.price %> ----------
+    <%= product.weight %> ----------
+    <%= product.size %> ----------
+
     <br>
   <% end %>
 <% end %>

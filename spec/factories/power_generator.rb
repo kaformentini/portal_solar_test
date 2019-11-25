@@ -14,5 +14,7 @@ FactoryBot.define do
     lenght { 1.8 }
     weight { 118 }
     structure_type { "metalico" }
+    size { 0.432}
+    cost_benefit {3.46}
   end
 end

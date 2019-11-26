@@ -1,2 +1,0 @@
-class AddKeywordAndStructureTypeToRecommendedSearch < ApplicationRecord
-end

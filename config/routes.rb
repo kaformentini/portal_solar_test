@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   resources :freight, only: %i[] do
+    get "cep", on: :collection
   end
 
 

@@ -1,4 +1,4 @@
-<%= form_for @freight do |f| %>
-    <%= f.text_field(:cep) %>
-    <%= f.label(:cep, "CEP") %>
+<%= form_tag(cep_freight_index_path, method: :get) do %>
+    <input class="form-control form-control-lg" type="text" placeholder="CEP" name='cep'>
+    <button type="submit" class="btn btn-outline-primary btn-lg">Calcular</button>
 <% end %>

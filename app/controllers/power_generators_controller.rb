@@ -1,4 +1,5 @@
 class PowerGeneratorsController < ApplicationController
+  
   def index
     @power_generators = PowerGenerator.all
   end
@@ -8,7 +9,6 @@ class PowerGeneratorsController < ApplicationController
   end
 
   def recommendations
-    
   end
 
   def search
@@ -18,12 +18,6 @@ class PowerGeneratorsController < ApplicationController
       flash.now[:error] = 'Descupe! não encontramos nenhum produto'
     else
       flash.now[:notice] = 'Encontramos esse(s) produto(s)'
-
     end
-    
-  end
-
-  def freight
-    
   end
 end

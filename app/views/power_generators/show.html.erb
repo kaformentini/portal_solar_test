@@ -20,4 +20,10 @@
 <%= image_tag @power_generator.image_url %>
 
 <%= link_to 'Voltar', root_path %>
-<%= link_to 'Calcular frete', freight_power_generators_path %>
+
+<%= form_tag(power_generator_path, method: :get) do %>
+    <input class="form-control form-control-lg" type="text" placeholder="CEP" name='cep'>
+    <button type="submit" class="btn btn-outline-primary btn-lg">Calcular</button>
+<% end %>
+<p><%= "Frete para: #{@power_generator_freight.first.state}" %></p>
+<p><%= "Custo: #{@power_generator_freight.first.cost} %></p>

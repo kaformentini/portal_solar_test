@@ -7,12 +7,12 @@ Rails.application.routes.draw do
 
   resources :power_generators, only: %i[show] do
     get "search", on: :collection
-    get "freight", on: :collection
+    get "freight", on: :member
+    get "calculation_freight", on: :member
   end
 
   resources :freight, only: %i[] do
-    get "cep", on: :collection
+    # get "cep", on: :collection
   end
-
-
+  
 end

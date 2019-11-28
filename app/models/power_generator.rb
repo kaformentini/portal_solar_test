@@ -18,6 +18,11 @@ class PowerGenerator < ApplicationRecord
     if search
       where("name LIKE :param or description LIKE :param", {param: "%#{search}%"})
     end
-
   end
+
+  def self.freight(address, power_generator)
+    freight = Freight.all
+    return freight.where("state LIKE :state and weight_min <= :weight and weight_max >= :weight", {state: "%#{address[:state]}%", weight: "#{power_generator[:weight]}"})
+  end
+
 end

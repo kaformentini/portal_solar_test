@@ -6,11 +6,11 @@ class PowerGeneratorsController < ApplicationController
 
   def show
       @power_generator = PowerGenerator.find(params[:id])
-      if params[:cep].present?
-        @address = Correios::CEP::AddressFinder.get(params[:cep])
+      if params[:cep].present? 
+        @address = calculate_cep
+        return flash.now[:notice] = 'CEP não encontrado' unless not @address.empty?
         @power_generator = PowerGenerator.find(params[:id])
         @power_generator_freight = PowerGenerator.freight(@address, @power_generator)
-        # byebug
       end
   end
 
@@ -34,6 +34,10 @@ class PowerGeneratorsController < ApplicationController
     params.require(:power_generator).permit(:name, :description, :image_url, :manufacturer,
                                             :structure_type, :price, :height, :width, :length,
                                             :weight, :kwp, :size, :cost_benefit)
+  end
+  
+  def calculate_cep
+    Correios::CEP::AddressFinder.get(params[:cep])
   end
 
 end

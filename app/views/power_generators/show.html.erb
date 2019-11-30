@@ -28,3 +28,6 @@
 <% if @power_generator_freight.present?%>
     <%= render "form_cost" %>
 <% end %>
+
+<h3><%= flash[:error] %></h3>
+<h3><%= flash[:notice] %></h3>

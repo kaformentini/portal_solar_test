@@ -28,7 +28,8 @@ https://mighty-harbor-04580.herokuapp.com/
 
   - Páginas dos produtos funcionando;
 
-  - WIP calculo de frete; Já realizado parte de calculo do endereço pelo CEP.
+  - Calculo de frete já funcionando; Retorno do cep inserido, da cidade/estado do frete e valor;
+    Em caso de CEP inválido, retorna mensagem de "CEP não encontrado"
 
   - Fiz muito pouco do front-end, ainda pretendo mexer nisso mais depois que terminar a parte do frete.
 

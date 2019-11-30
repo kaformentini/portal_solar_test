@@ -1,7 +1,10 @@
 class PowerGeneratorsController < ApplicationController
+
   
   def index
-    @power_generators = PowerGenerator.all
+    products_by_page = 6
+    @page  = params.fetch(:page,0).to_i
+    @power_generators = PowerGenerator.offset(@page * products_by_page).limit(products_by_page)
   end
 
   def show

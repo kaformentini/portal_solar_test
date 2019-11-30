@@ -18,8 +18,7 @@ feature "User calculate freight by cep" do
     expect(current_path).to eq "/power_generators/#{power_generator_product.id}"
     expect(page).to have_content('01001000')
     expect(page).to have_content('São Paulo')
-    expect(page).to have_content('Sé')
     expect(page).to have_content('SP')
-    expect(page).to have_content("#{freight_table_b.cost")
+    expect(page).to have_content("#{freight_table_b.cost}")
   end
 end

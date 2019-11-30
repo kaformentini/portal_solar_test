@@ -6,10 +6,11 @@ class PowerGeneratorsController < ApplicationController
 
   def show
       @power_generator = PowerGenerator.find(params[:id])
-      # if parms[:cep].present?
+      if params[:cep].present?
         @address = Correios::CEP::AddressFinder.get(params[:cep])
         @power_generator = PowerGenerator.find(params[:id])
         @power_generator_freight = PowerGenerator.freight(@address, @power_generator)
+        # byebug
       end
   end
 
@@ -28,6 +29,7 @@ class PowerGeneratorsController < ApplicationController
 
 
   private
+
   def power_generator_params
     params.require(:power_generator).permit(:name, :description, :image_url, :manufacturer,
                                             :structure_type, :price, :height, :width, :length,

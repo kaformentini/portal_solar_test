@@ -43,4 +43,6 @@ https://mighty-harbor-04580.herokuapp.com/
 
   - No teste "User sees your recommended products", não está verificando se está em ordem de menor preco para maior;
 
+  - Por algum motivo,ao clicar em "pesquisa avançada" no deploy, não está funcionando.
+
   - Nos testes, ainda não consegui usar o método within do capybara, por isso o botão do "Recomendamos apra você" se encontra no lugar errado, apesar de também poder ser acessado através do "Pesquisa Avançada";

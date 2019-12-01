@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     get "search", on: :collection
     get "freight", on: :member
     get "calculation_freight", on: :member
+    get 'recommended_search', on: :collection
   end
 
   resources :freight, only: %i[] do

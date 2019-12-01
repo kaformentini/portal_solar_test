@@ -1,0 +1,12 @@
+Nós queremos saber mais sobre o que você procura. Responda as perguntas abaixo:
+
+<%= form_tag(@recommended_search, method: :get) do %>
+  <%= check_box_tag :lowest_cost, 'Menor custo' %>
+  <%= check_box_tag :lower_weight, 'Menor Peso' %>
+  <%= check_box_tag :lower_size, "Menor Tamanho" %>
+  <%= text_field_tag :keyword, "Palavra Chave" %>
+  <%= select_tag "Tipo de estrutura", options_from_collection_for_select(PowerGenerator, "id", "structure_types"), include_blank: true %>
+  <%= select(:structure_type, PowerGenerator.structure_types, { include_blank: true }) %>  
+  <%= submit('Buscar') %>
+  
+<% end %>

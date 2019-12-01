@@ -27,7 +27,7 @@ feature 'Index have just six products per page' do
     power_generators = power_generators.map { |x| create(:power_generator, name: x) }
 
     visit root_path
-    click_on 'Próxima página'
+    click_on '| Avançar'
 
     expect(page).not_to have_content(power_generators[0].name)
     expect(page).not_to have_content(power_generators[1].name)
@@ -46,8 +46,8 @@ feature 'Index have just six products per page' do
     power_generators = power_generators.map { |x| create(:power_generator, name: x) }
 
     visit root_path
-    click_on 'Próxima página'
-    click_on 'Voltar página'
+    click_on '| Avançar'
+    click_on 'Voltar |'
 
     expect(page).to have_content(power_generators[0].name)
     expect(page).to have_content(power_generators[1].name)

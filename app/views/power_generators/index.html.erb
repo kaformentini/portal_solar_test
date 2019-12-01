@@ -16,5 +16,16 @@
     </div>
   <% end %>
 </div>
-<p><%= link_to 'Voltar página', power_generators_path(page: @page - 1) %>
-<p><%= link_to 'Próxima página', power_generators_path(page: @page + 1) %>
+
+<%if @page > 0 %>
+  <%= link_to 'Voltar |', power_generators_path(page: @page - 1) %>
+<%end%>
+
+<% @array_num_pages.each do |number_page|%>
+
+  <%= link_to "#{number_page}", power_generators_path(page: (number_page - 1)) %>
+<%end%>
+
+<%if @page < @array_num_pages.last - 1 %>
+  <%= link_to '| Avançar', power_generators_path(page: @page + 1) %>
+<%end%>

@@ -23,6 +23,11 @@ class PowerGeneratorsController < ApplicationController
     end
   end
 
+  def recommended_search
+    @power_generators = PowerGenerator.recommended_search(params)
+    redirect_to search_power_generators_path(@power_generators)
+  end
+
   private
 
   def power_generator_params

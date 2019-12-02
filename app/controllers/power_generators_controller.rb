@@ -24,8 +24,10 @@ class PowerGeneratorsController < ApplicationController
   end
 
   def recommended_search
+    byebug
     @power_generators = PowerGenerator.recommended_search(params)
-    redirect_to search_power_generators_path(@power_generators)
+    # render recommended_search_result_power_generators_path
+    byebug
   end
 
   private

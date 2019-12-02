@@ -43,7 +43,7 @@ feature 'User search for a product' do
     expect(page).not_to have_content(product_110v.name)
   end
 
-  scenario 'user do not find any product' do
+  scenario 'and do not find any product' do
     product_110v = create(:power_generator, name:'PRODUTO 1', description: "2 MPPTs para adaptação versátil a diferentes tipos ou quantidades de módulos construídos com diferentes alinhamentos    
                                                                             Monitoramento inteligente de 4 strings e 80% de economia de tempo na detecção de falhas    
                                                                             Portas RS485 e USB para conectividade e gerenciamento de dados    

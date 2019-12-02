@@ -30,8 +30,8 @@ class PowerGenerator < ApplicationRecord
     search = where(['price <= ?', 30_000.00]) if params[:lowest_cost].present?
     search = where(['weight <= ?', 200]) if params[:lower_weight].present?
     search = where(['size <= ?', 0.5]) if params[:lower_size].present?
-    search = where('name LIKE :param or description LIKE :param', {param: "%#{keyword}%"}) if params[:keyword].nil?
-    search = where('structure_type = ?', structure_type) if params[:structure_type].nil?
+    search = where('name LIKE :param or description LIKE :param', {param: "%#{params[:keyword]}%"}) if not params[:keyword].nil?
+    search = where('structure_type = ?', params[:structure_type]) if not params[:structure_type].nil?
 
     search = order(:price) if params[:lowest_cost].present?
     search = order(:weight) if params[:lower_weight].present?
